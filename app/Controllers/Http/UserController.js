@@ -4,10 +4,7 @@ const User = use('App/Models/User')
 
 class UserController {
   async index () {
-    const users = await User.query()
-      .with('addresses')
-      .fetch()
-    return users
+    return null
   }
 
   async destroy () {}
